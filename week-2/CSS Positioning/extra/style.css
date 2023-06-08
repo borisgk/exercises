@@ -1,0 +1,36 @@
+div.image {
+    background-image: url(image.jpg);
+    width: 1000px;
+    height: 748px;
+    border: solid black;
+    position: relative;
+    margin: auto;
+}
+
+div.text {
+    position: absolute;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#tl {
+    top:0px;
+    left:0px;
+}
+
+#tr {
+    top: 0px;
+    right: 0px;
+}
+
+#bl {
+    bottom: 0px;
+    left: 0px;
+}
+
+#br {
+    bottom: 0px;
+    right: 0px;
+}

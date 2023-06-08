@@ -1,0 +1,26 @@
+div.left {
+    width: calc(100% - 20px);
+    float: left;
+    height: 200px;
+    background-color: pink;
+}
+
+div.right {
+    width: 20px;
+    float: left;
+    height: 200px;
+    background-color: violet;
+}
+
+div.container {
+    width: 40%;
+}
+
+div.element {
+    box-sizing: border-box;
+    background-color: pink;
+    width: calc(100% / 3);
+    float: left;
+    height: 100px;
+    border: solid 1px black;
+}

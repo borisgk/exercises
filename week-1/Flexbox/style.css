@@ -1,0 +1,54 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    border: solid 2px black;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.left {
+    width: 25%;
+    height: 200px;
+    align-self: flex-start;
+    background-color: yellow;
+    text-align: center;
+}
+
+.center {
+    width: 50%;
+    height: 200px;
+    color: white;
+    background-color: black;
+    align-self: center;
+    text-align: center;
+}
+
+.right {
+    width: 25%;
+    height: 200px;
+    align-self: flex-end;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: darkseagreen;
+}
