@@ -44,26 +44,25 @@ p.friend {
     line-height: 2rem;
 }
 
-.message-left {
-    background-color: darkgrey;
-    height: 6rem;
-    display: inline-block;
+.message {
     border-radius: 10px;
-    margin-right: auto;
-    padding-left: 20px;
+    height: 50%;
     padding-right: 20px;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
-.message-right {
-    display: inline-block;
-    background-color: darkgreen;
-    height: 6rem;
-    border-radius: 10px;
-    margin-left: auto;
+.left {
+    background-color: darkgrey;
+    justify-self: start;
+    margin-left: 20px;
     padding-left: 20px;
-    padding-right: 20px;
+
+}
+
+.right {
+    justify-self: end;
     margin-right: 20px;
+    background-color: darkgreen;
 }
 
 p.text {
