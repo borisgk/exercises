@@ -9,6 +9,8 @@ const myObject = {
         console.log(this.numbers)
     },
 
+    // This looks extremely cumbersome - need to explore in detail
+
     [Symbol.iterator]() {
         let index = 0;
         let myNumbers = this.numbers
@@ -17,14 +19,14 @@ const myObject = {
           next: () => {
             while (index <= myNumbers.length) {
               if (myNumbers[index] % 2 === 0) {
-                index++;
-                return { value: myNumbers[index - 1], done: false };
+                index++
+                return { value: myNumbers[index - 1], done: false }
               }
-              index++;
+              index++
             }
-            return { done: true };
+            return { done: true }
           }
-        };
+        }
       }
 }
 

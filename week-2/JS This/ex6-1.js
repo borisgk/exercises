@@ -28,7 +28,7 @@ const coffeeShop = {
         }
         if (this.drinkRequirements[drinkType].beanRequirement <= this.beans) {
             this.beans -= this.drinkRequirements[drinkType].beanRequirement
-            console.log("Here is your "+ drinkType)
+            console.log("Here is your " + drinkType)
             return true
         } else {
             console.log("Sorry, we’re all out of beans!")

@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20fr 1fr;
+    grid-template-areas: "f m" "f e";
+}
+
+.friends {
+    grid-area: f;
+    background-color: blueviolet;
+    display: grid;
+    align-content: top;
+    height: 100%;
+}
+
+.messages {
+    grid-area: m;
+    background-color: lightgray;
+    display: grid;
+}
+
+.editor {
+    grid-area: e;
+    background-color: white;
+    display: grid;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+p.friend {
+    background-color: lightblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.message-left {
+    background-color: darkgrey;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.message-right {
+    display: inline-block;
+    background-color: darkgreen;
+    height: 6rem;
+    border-radius: 10px;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+p.text {
+    font-family: fantasy;
+}
+
+p.time {
+    font-family: fantasy;
+    text-align: right;
+}
