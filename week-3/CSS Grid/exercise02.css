@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+}
+
+div.container {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: "t""c""f"
+}
+
+div.topbar {
+    grid-area: t;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "l b";
+    height: 100%;
+}
+
+div.content {
+    grid-area: c;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    ". . . . . . ."
+    ". a . b . c ."
+    ". . . . . . .";
+}
+
+div.abcd {
+    grid-area: a;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+div.tile {
+    align-self: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: darkkhaki;
+    height: 100%;
+    align-content: center;
+    display: grid;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+div.table {
+    grid-area: b;
+    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.cell {
+    display: grid;
+    background-color: hotpink;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+    border-left: 1px solid gray;
+    border-right: 1px solif gray;
+}
+
+div.cards {
+    grid-area: c;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr;
+}
+
+
+
+
+
+
+
+
+div.footer {
+    grid-area: f;
+    background-color: black;
+}
+
+div.logo {
+    grid-area: l;
+    background-image: url(logo.png);
+    box-sizing: border-box;
+    border: 1px solid black;
+
+}
+
+div.buttons {
+    grid-area: b;
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+div.section {
+    background-color: darkcyan;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 3rem;
+}
+
+
+div.cardwithtitle {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "cardlogo cardtitle"
+    "cardtext cardtext";
+}
+
+div.cardlogo {
+    grid-area: cardlogo;
+    background-image: url(logo.png);
+    background-size: contain;
+}
+
+div.cardtitle {
+    grid-area: cardtitle;
+    background-color: greenyellow;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-weight: bold;
+}
+
+div.cardtext {
+    grid-area: cardtext;
+    background-color: silver;
+}
+
+p.mytext {
+    margin: 10px;
+}
+
+div.simplecard {
+    display: grid;
+}
+
+div.space {
+    display: grid;
+    background-color: white;
+}
+
+img.left {
+    width: 100px;
+    margin: 10px;
+}
