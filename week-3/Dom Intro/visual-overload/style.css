@@ -1,0 +1,15 @@
+div.container {
+    display: grid;
+    background-color: antiquewhite;
+    height: 100vh;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: auto;
+}
+
+div.box {
+    display: grid;
+    border: 1px solid gray;
+    font-size: 12pt;
+    text-align: center;
+    align-content: center;
+}

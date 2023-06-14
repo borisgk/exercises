@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.errors {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    padding: 30px;
+}
+
+#form {
+    background-color: #2ecc71;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "name name"
+    "salary birthdate"
+    "phone phone"
+    ". submit";
+    grid-gap: 30px;
+    width: 30%;
+    padding: 30px;
+}
+
+label {
+    display: block;
+}
+
+div.name {
+    grid-area: name;
+}
+
+div.salary {
+    grid-area: salary;
+}
+
+div.birthdate {
+    grid-area: birthdate;
+}
+
+div.phone {
+    grid-area: phone;
+}
+
+div.submit {
+    grid-area: submit;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+}
