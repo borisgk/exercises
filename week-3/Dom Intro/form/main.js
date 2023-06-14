@@ -31,6 +31,8 @@ function addErrorMessages(msg) {
 
 }
 
+document.getElementsByClassName()
+
 function validate() {
     let isValid = true
     let errors = []
