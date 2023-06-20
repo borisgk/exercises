@@ -1,0 +1,10 @@
+.box {
+    background-color: lightgreen;
+    height: 100px;
+    border: solid black 2px;
+    border-radius: 0.5em;
+}
+
+.row {
+    margin-top: 20px;
+}
