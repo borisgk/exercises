@@ -1,0 +1,56 @@
+{
+    "animals": [
+        {
+            "name":"cow",
+            "weight": {
+                "kg":250,
+                "tn":0.25
+            },
+            "areal":"fields",
+            "endangered":false,
+            "foods": {
+                "grass": 50,
+                "fruits": 25,
+                "beer": 25
+            },
+            "eatenby":["tiger","wolf","dinosaur"],
+            "delicious":5
+        },
+        {
+            "name":"elephant",
+            "weight": {
+                "kg":2000,
+                "tn":2
+            },
+            "areal":"africa",
+            "endangered":"no",
+            "foods": ["banana","beer","soda"],
+            "eatenby":["fly","mosquito","monkey"],
+            "delicious":1
+        },
+        {
+            "name":"gray wolf",
+            "weight": {
+                "kg":100,
+                "tn":0.1
+            },
+            "areal":"europe",
+            "endangered":"no",
+            "foods": ["hare","men","women"],
+            "eatenby":["eagle","crow","elephant"],
+            "delicious":1
+        },
+        {
+            "name":"squirrel",
+            "weight": {
+                "kg":0.5,
+                "tn":0.0005
+            },
+            "areal":"forest",
+            "endangered":"no",
+            "foods": ["pine","wine","beer"],
+            "eatenby":["fox","monkey","donkey"],
+            "delicious":3
+        }
+    ]
+}
