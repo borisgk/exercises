@@ -1,0 +1,16 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post {
+    height: 3em;
+    line-height: 3em;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.text {
+    font-style: italic;
+}
