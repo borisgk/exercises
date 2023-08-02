@@ -12,15 +12,24 @@ const App = () => {
       { item: "Gizem Backwatch", price: 230, discount: 0.6, hottest: false },
       { item: "Surround Sound Pelican", price: 3099, discount: 0.05, hottest: true }
     ],
-    shouldDiscount: false,
+    shouldDiscount: true,
     currentPage: "Landing"
   })
 
+  function changePage() {
+    let myObj = {...state}
+    if (myObj.currentPage === "Landing") {
+      myObj.currentPage = "Home"
+    } else {
+      myObj.currentPage = "Landing"
+    }
+    setState(myObj)
+  }
 
   return (
     <div>
-      <Landing data={state} />
-      <Home data={state} />
+      {state.currentPage === "Landing" ? <Landing data={state} /> : <Home data={state} />}
+      <button onClick={changePage}>{state.currentPage === "Landing" ? "Home" : "Landing"}</button>
     </div>
   )
 }
