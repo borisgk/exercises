@@ -1,0 +1,32 @@
+.posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.post {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 28%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.mobile-post {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+
+}
+
+.post-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.post-body {
+  text-align: justify;
+}
